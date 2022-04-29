@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.LSP", "SOLID.LSP\SOLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.ISP", "SOLID.ISP\SOLID.ISP.csproj", "{DF3436CF-663A-4622-879C-E661054C57A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.DIP", "SOLID.DIP\SOLID.DIP.csproj", "{7BE56721-A084-4CBD-B5A0-E44CB9C31F3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DF3436CF-663A-4622-879C-E661054C57A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF3436CF-663A-4622-879C-E661054C57A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF3436CF-663A-4622-879C-E661054C57A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE56721-A084-4CBD-B5A0-E44CB9C31F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE56721-A084-4CBD-B5A0-E44CB9C31F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE56721-A084-4CBD-B5A0-E44CB9C31F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE56721-A084-4CBD-B5A0-E44CB9C31F3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
