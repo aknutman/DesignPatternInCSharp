@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Builder.Stepwise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Builder.FunctionalBuilder", "Creational.Builder.FunctionalBuilder\Creational.Builder.FunctionalBuilder.csproj", "{E532FC97-95F7-478A-9924-F70698D81356}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Builder.BuilderFacets", "Creational.Builder.BuilderFacets\Creational.Builder.BuilderFacets.csproj", "{5DB054D8-E373-4B43-8907-3F2A6EBF52D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{E532FC97-95F7-478A-9924-F70698D81356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E532FC97-95F7-478A-9924-F70698D81356}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E532FC97-95F7-478A-9924-F70698D81356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB054D8-E373-4B43-8907-3F2A6EBF52D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB054D8-E373-4B43-8907-3F2A6EBF52D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB054D8-E373-4B43-8907-3F2A6EBF52D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB054D8-E373-4B43-8907-3F2A6EBF52D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
