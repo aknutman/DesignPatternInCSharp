@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.DIP", "SOLID.DIP\SOLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Builder.Builder", "Creational.Builder.Builder\Creational.Builder.Builder.csproj", "{1F32C17A-3D25-4C59-8C41-38218ED22962}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Builder.BuilderInheritance", "Creational.Builder.BuilderInheritance\Creational.Builder.BuilderInheritance.csproj", "{15E1A726-0427-4E7F-87E7-54D9D14F047B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1F32C17A-3D25-4C59-8C41-38218ED22962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F32C17A-3D25-4C59-8C41-38218ED22962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F32C17A-3D25-4C59-8C41-38218ED22962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E1A726-0427-4E7F-87E7-54D9D14F047B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E1A726-0427-4E7F-87E7-54D9D14F047B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E1A726-0427-4E7F-87E7-54D9D14F047B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E1A726-0427-4E7F-87E7-54D9D14F047B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
