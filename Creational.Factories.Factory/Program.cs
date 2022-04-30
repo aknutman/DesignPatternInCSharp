@@ -1,20 +1,8 @@
 ﻿public class Point
 {
-    public static Point NewCartesianPoint(double x, double y)
-    {
-        return new Point(x, y);
-    }
-
-    public static Point NewPolarPoint(double rho, double theta)
-    {
-        double x = rho * Math.Cos(theta);
-        double y = rho * Math.Sin(theta);
-
-        return new Point(x, y);
-    }
-
     private double x, y;
-    private Point(double x, double y)
+    
+    internal Point(double x, double y)
     {
         this.x = x;
         this.y = y;
@@ -24,13 +12,30 @@
     {
         return $"{nameof(x)}: {x}, {nameof(y)}: {y}";
     }
+
+    // Inner Factory
+    public class Factory
+    {
+        public static Point NewCartesianPoint(double x, double y)
+        {
+            return new Point(x, y);
+        }
+
+        public static Point NewPolarPoint(double rho, double theta)
+        {
+            double x = rho * Math.Cos(theta);
+            double y = rho * Math.Sin(theta);
+
+            return new Point(x, y);
+        }
+    }
 }
 
 public class Demo
 {
     static void Main(string[] args)
     {
-        var point = Point.NewPolarPoint(1.9,Math.PI / 2);
+        var point = Point.Factory.NewPolarPoint(1.9, Math.PI / 2);
         Console.WriteLine(point);
 
     }
