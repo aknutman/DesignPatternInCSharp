@@ -1,4 +1,5 @@
-﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,10 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MoreLinq;
 using Autofac;
-//using NUnit.Framework;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DeisgnPatternInCSharp.Creational.Singleton.Singleton
+namespace Creational.Singleton.Singleton.UnitTest
 {
     public interface IDatabase
     {
@@ -51,29 +50,54 @@ namespace DeisgnPatternInCSharp.Creational.Singleton.Singleton
         public static SingletonDatabase Instance => instance.Value;
     }
 
-    //[TestClass]
-    //public class SingletonTests
-    //{
-    //    [TestMethod]
-    //    public void IsSingletonTest()
-    //    {
-    //        var db = SingletonDatabase.Instance;
-    //        var db2 = SingletonDatabase.Instance;
-    //        Assert.AreEqual(db, db2);
-    //        //Assert.That(db, Is.SameAs(db2));
-    //        //Assert.That(SingletonDatabase.Count, Is.EqualTo(1));
-    //    }
-    //}
-
-    static class Program
+    public class SingletonRecordFinder
     {
-        static void Main(string[] args)
+        public int GetTotalPopulation(IEnumerable<string> names)
         {
-            var db = SingletonDatabase.Instance;
-            var city = "﻿Tokyo";
-            Console.WriteLine($"{city} has population {db.GetPopulation(city)}");
+            int result = 0;
+            foreach(var name in names)
+            {
+                result += SingletonDatabase.Instance.GetPopulation(name);
+            }
 
-            Console.ReadLine();
+            return result;
         }
     }
+
+    [TestClass]
+    public class SingletonTests
+    {
+        [TestMethod]
+        public void IsSingletonTest()
+        {
+            var db = SingletonDatabase.Instance;
+            var db2 = SingletonDatabase.Instance;
+            Assert.AreEqual(db, db2);
+            Assert.AreEqual(SingletonDatabase.Count, 1);
+        }
+
+        [TestMethod]
+        public void SingletonTotalPopulationTest()
+        {
+            var rf = new SingletonRecordFinder();
+            var names = new[]
+            {
+                "Seoul", "Mexico City"
+            };
+            int tp = rf.GetTotalPopulation(names);
+            Assert.AreEqual(tp, (17500000 + 17400000));
+        }
+    }
+
+    //static class UnitTest
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        var db = SingletonDatabase.Instance;
+    //        var city = "Tokyo";
+    //        Console.WriteLine($"{city} has population {db.GetPopulation(city)}");
+
+    //        Console.ReadLine();
+    //    }
+    //}
 }
