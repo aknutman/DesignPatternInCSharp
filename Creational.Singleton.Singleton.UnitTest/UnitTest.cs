@@ -50,17 +50,77 @@ namespace Creational.Singleton.Singleton.UnitTest
         public static SingletonDatabase Instance => instance.Value;
     }
 
+    public class OrdinaryDatabase : IDatabase
+    {
+        private Dictionary<string, int> capitals;
+
+        private OrdinaryDatabase()
+        {
+            Console.WriteLine("Initializing ordinary database");
+
+            capitals = File.ReadAllLines(
+                Path.Combine(
+                    new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName, "capitals.txt"
+                    )
+                )
+                .Batch(2)
+                .ToDictionary(
+                    list => list.ElementAt(0).Trim(),
+                    list => int.Parse(list.ElementAt(1))
+                );
+        }
+
+        public int GetPopulation(string name)
+        {
+            return capitals[name];
+        }
+    }
+
     public class SingletonRecordFinder
     {
         public int GetTotalPopulation(IEnumerable<string> names)
         {
             int result = 0;
-            foreach(var name in names)
+            foreach (var name in names)
             {
                 result += SingletonDatabase.Instance.GetPopulation(name);
             }
 
             return result;
+        }
+    }
+
+    public class COnfigurableRecordFinder
+    {
+        private IDatabase database;
+
+        public COnfigurableRecordFinder(IDatabase database)
+        {
+            this.database = database ?? throw new ArgumentNullException(nameof(database));
+        }
+
+        public int GetTotalPopulation(IEnumerable<string> names)
+        {
+            int result = 0;
+            foreach (var name in names)
+            {
+                result += database.GetPopulation(name);
+            }
+
+            return result;
+        }
+    }
+
+    public class DummyDatabase : IDatabase
+    {
+        public int GetPopulation(string name)
+        {
+            return new Dictionary<string, int>
+            {
+                ["alpha"] = 1,
+                ["beta"] = 2,
+                ["gamma"] = 3
+            }[name];
         }
     }
 
@@ -86,6 +146,30 @@ namespace Creational.Singleton.Singleton.UnitTest
             };
             int tp = rf.GetTotalPopulation(names);
             Assert.AreEqual(tp, (17500000 + 17400000));
+        }
+
+        [TestMethod]
+        public void ConfigurablePopulationTest()
+        {
+            var rf = new COnfigurableRecordFinder(new DummyDatabase());
+            var names = new[] { "alpha", "gamma" };
+            int tp = rf.GetTotalPopulation(names);
+            Assert.AreEqual(tp, 4);
+        }
+
+        [TestMethod]
+        public void DIPopulationTest()
+        {
+            var cb = new ContainerBuilder();
+            cb.RegisterType<OrdinaryDatabase>()
+                .As<IDatabase>()
+                .SingleInstance();
+            cb.RegisterType<COnfigurableRecordFinder>();
+
+            using (var c = cb.Build())
+            {
+                var rf = c.Resolve<COnfigurableRecordFinder>();
+            }
         }
     }
 
