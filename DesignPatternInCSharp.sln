@@ -47,11 +47,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Singleton.Single
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational.Singleton.Singleton.UnitTest", "Creational.Singleton.Singleton.Unittest\Creational.Singleton.Singleton.UnitTest.csproj", "{D6F225D3-4B6F-498F-9371-D014BB344173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Singleton.SingletonInDI", "Creational.Singleton.SingletonInDI\Creational.Singleton.SingletonInDI.csproj", "{086F5234-A446-40AC-ADAC-B12E28F1B0EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational.Singleton.SingletonInDI", "Creational.Singleton.SingletonInDI\Creational.Singleton.SingletonInDI.csproj", "{086F5234-A446-40AC-ADAC-B12E28F1B0EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Singleton.Monostate", "Creational.Singleton.Monostate\Creational.Singleton.Monostate.csproj", "{60574AE8-DAD8-4B5E-A0F5-5C852161223C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational.Singleton.Monostate", "Creational.Singleton.Monostate\Creational.Singleton.Monostate.csproj", "{60574AE8-DAD8-4B5E-A0F5-5C852161223C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Singleton.PerThreadSingleton", "Creational.Singleton.PerThreadSingleton\Creational.Singleton.PerThreadSingleton.csproj", "{1F80DB59-14DF-4FF8-AFCA-E894E8A83B61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational.Singleton.PerThreadSingleton", "Creational.Singleton.PerThreadSingleton\Creational.Singleton.PerThreadSingleton.csproj", "{1F80DB59-14DF-4FF8-AFCA-E894E8A83B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational.Singleton.AmbientContext", "Creational.Singleton.AmbientContext\Creational.Singleton.AmbientContext.csproj", "{80D785BE-42BC-4815-8A28-AD0875E4D00B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{1F80DB59-14DF-4FF8-AFCA-E894E8A83B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F80DB59-14DF-4FF8-AFCA-E894E8A83B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F80DB59-14DF-4FF8-AFCA-E894E8A83B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D785BE-42BC-4815-8A28-AD0875E4D00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D785BE-42BC-4815-8A28-AD0875E4D00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D785BE-42BC-4815-8A28-AD0875E4D00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D785BE-42BC-4815-8A28-AD0875E4D00B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
