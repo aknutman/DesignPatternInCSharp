@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.NoCachin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.WithCaching", "Structural.Adapter.WithCaching\Structural.Adapter.WithCaching.csproj", "{11ACCCBA-8343-46A6-9A19-4B5777DE7534}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Adapter.GenericValueAdapter", "Structural.Adapter.GenericValueAdapter\Structural.Adapter.GenericValueAdapter.csproj", "{8021BA13-BAD1-4ED7-A7AD-16059B8C0272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.GenericValueAdapter", "Structural.Adapter.GenericValueAdapter\Structural.Adapter.GenericValueAdapter.csproj", "{8021BA13-BAD1-4ED7-A7AD-16059B8C0272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection", "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection\Structural.Adapter.AutofacDemos.AdapterInDependencyInjection.csproj", "{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{8021BA13-BAD1-4ED7-A7AD-16059B8C0272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8021BA13-BAD1-4ED7-A7AD-16059B8C0272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8021BA13-BAD1-4ED7-A7AD-16059B8C0272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
