@@ -63,6 +63,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.GenericV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection", "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection\Structural.Adapter.AutofacDemos.AdapterInDependencyInjection.csproj", "{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Bridge", "Structural.Bridge\Structural.Bridge.csproj", "{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
