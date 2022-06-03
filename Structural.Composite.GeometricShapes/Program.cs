@@ -32,7 +32,14 @@ namespace Structural.Composite.GeometricShapes
 
     public class Circle : GraphicObject
     {
-        public override string Name => "Circle";
+        //public override string Name => "Circle";
+        public override string Name
+        {
+            get
+            {
+                return "Circle";
+            }
+        }
     }
 
     public class Square : GraphicObject
