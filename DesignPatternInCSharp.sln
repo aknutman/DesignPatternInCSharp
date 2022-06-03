@@ -61,11 +61,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.WithCach
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.GenericValueAdapter", "Structural.Adapter.GenericValueAdapter\Structural.Adapter.GenericValueAdapter.csproj", "{8021BA13-BAD1-4ED7-A7AD-16059B8C0272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection", "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection\Structural.Adapter.AutofacDemos.AdapterInDependencyInjection.csproj", "{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection", "Structural.Adapter.AutofacDemos.AdapterInDependencyInjection\Structural.Adapter.AutofacDemos.AdapterInDependencyInjection.csproj", "{6A9D6DB9-3257-4C8D-BAD2-D98E47ADD1DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Bridge", "Structural.Bridge\Structural.Bridge.csproj", "{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Bridge", "Structural.Bridge\Structural.Bridge.csproj", "{59A05C57-4F1A-4BA2-A548-19DB598CD0F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Bridge.Exercise", "Structural.Bridge.Exercise\Structural.Bridge.Exercise.csproj", "{7235405B-DB37-4F16-BC4B-7D547BFEA56B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Bridge.Exercise", "Structural.Bridge.Exercise\Structural.Bridge.Exercise.csproj", "{7235405B-DB37-4F16-BC4B-7D547BFEA56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Composite.GeometricShapes", "Structural.Composite.GeometricShapes\Structural.Composite.GeometricShapes.csproj", "{8D076D79-65DF-4422-B70B-442027195328}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{7235405B-DB37-4F16-BC4B-7D547BFEA56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7235405B-DB37-4F16-BC4B-7D547BFEA56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7235405B-DB37-4F16-BC4B-7D547BFEA56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D076D79-65DF-4422-B70B-442027195328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D076D79-65DF-4422-B70B-442027195328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D076D79-65DF-4422-B70B-442027195328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D076D79-65DF-4422-B70B-442027195328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
