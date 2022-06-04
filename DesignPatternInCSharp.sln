@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Composite.Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Composite.NeuralNetworks", "Structural.Composite.NeuralNetworks\Structural.Composite.NeuralNetworks.csproj", "{71FB63ED-D490-4418-A5CA-64F542788E51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Decorator.MultipleInheritance", "Structural.Decorator.MultipleInheritance\Structural.Decorator.MultipleInheritance.csproj", "{EB42133F-3517-4BE2-8625-DDCCA659B9A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{71FB63ED-D490-4418-A5CA-64F542788E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71FB63ED-D490-4418-A5CA-64F542788E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71FB63ED-D490-4418-A5CA-64F542788E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
