@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Composite.Neural
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Decorator.MultipleInheritance", "Structural.Decorator.MultipleInheritance\Structural.Decorator.MultipleInheritance.csproj", "{EB42133F-3517-4BE2-8625-DDCCA659B9A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Decorator.DynamicDecoratorComposition", "Structural.Decorator.DynamicDecoratorComposition\Structural.Decorator.DynamicDecoratorComposition.csproj", "{61FF08C6-64D2-4787-9F84-35C170E83DA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB42133F-3517-4BE2-8625-DDCCA659B9A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
