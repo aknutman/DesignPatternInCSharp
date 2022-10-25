@@ -67,13 +67,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Bridge", "Struct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Bridge.Exercise", "Structural.Bridge.Exercise\Structural.Bridge.Exercise.csproj", "{7235405B-DB37-4F16-BC4B-7D547BFEA56B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Composite.GeometricShapes", "Structural.Composite.GeometricShapes\Structural.Composite.GeometricShapes.csproj", "{8D076D79-65DF-4422-B70B-442027195328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Composite.GeometricShapes", "Structural.Composite.GeometricShapes\Structural.Composite.GeometricShapes.csproj", "{8D076D79-65DF-4422-B70B-442027195328}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Composite.NeuralNetworks", "Structural.Composite.NeuralNetworks\Structural.Composite.NeuralNetworks.csproj", "{71FB63ED-D490-4418-A5CA-64F542788E51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Composite.NeuralNetworks", "Structural.Composite.NeuralNetworks\Structural.Composite.NeuralNetworks.csproj", "{71FB63ED-D490-4418-A5CA-64F542788E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Decorator.MultipleInheritance", "Structural.Decorator.MultipleInheritance\Structural.Decorator.MultipleInheritance.csproj", "{EB42133F-3517-4BE2-8625-DDCCA659B9A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Decorator.MultipleInheritance", "Structural.Decorator.MultipleInheritance\Structural.Decorator.MultipleInheritance.csproj", "{EB42133F-3517-4BE2-8625-DDCCA659B9A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Decorator.DynamicDecoratorComposition", "Structural.Decorator.DynamicDecoratorComposition\Structural.Decorator.DynamicDecoratorComposition.csproj", "{61FF08C6-64D2-4787-9F84-35C170E83DA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural.Decorator.DynamicDecoratorComposition", "Structural.Decorator.DynamicDecoratorComposition\Structural.Decorator.DynamicDecoratorComposition.csproj", "{61FF08C6-64D2-4787-9F84-35C170E83DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural.Proxy.DynamicProxy", "Structural.Proxy.DynamicProxy\Structural.Proxy.DynamicProxy.csproj", "{AF71B4D8-F989-40F1-8E1A-BD0A3FAC0764}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61FF08C6-64D2-4787-9F84-35C170E83DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF71B4D8-F989-40F1-8E1A-BD0A3FAC0764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF71B4D8-F989-40F1-8E1A-BD0A3FAC0764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF71B4D8-F989-40F1-8E1A-BD0A3FAC0764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF71B4D8-F989-40F1-8E1A-BD0A3FAC0764}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
